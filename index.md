@@ -21,12 +21,13 @@ springboot项目整合allure 报告
 修改资源的连接地址，如下：
 
 <#include "/layout/layout.ftl">
-·
+
 <@body>
-    <#--<meta charset="utf-8">-->
-    <#--<title>Allure Report</title>-->
+
     \<link rel="favicon" href="/lib/allure2/favicon.ico?v=2"\>
+    
     \<link rel="stylesheet" href="/lib/allure2/styles.css"\>
+    
      \<link rel="stylesheet" href="/lib/allure2/plugins/screen-diff/styles.css"\>
      
      .............................
@@ -38,7 +39,7 @@ springboot项目整合allure 报告
     <script src="/lib/allure2/plugins/screen-diff/index.js"></script>
 
 </@body>
-·
+
 #三 . 建立controller， 
 @Controller
 @RequestMapping("allure2")
@@ -51,9 +52,10 @@ public class allureReportController {
 注意：  @RequestMapping("allure2") 中的 "allure2" 要和 static/allure2 的名称一致。否则 资源会找不到。
 
 #四.  页面 调用 报告
-在任意页面，添加超链接 （如：implementCase/implementCase.ftl页），
+在任意页面，添加超链接 （如：implementCase/implementCase.ftl页）
+
+建立a 超链接标签， 连接地址： "/allure2/allureReport#suites"
 
 \<button id="btn_add" type="button" \>
-  //建立a 超链接标签， 连接地址： "/allure2/allureReport#suites"
            \<a  href="/allure2/allureReport#suites" target="_blank">演示Allure报告\</a\>
 \<\/button\>
