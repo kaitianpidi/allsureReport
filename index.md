@@ -1,5 +1,9 @@
+一. 导入资源文件
+
+
 1. 创建页面：  templates/allure2/allureReport.ftl 
-把allure-report中的index.html，改成allureReport.ftl 
+把allure-report中的index.html，改成allureReport.ftl  
+
 <#include "/layout/layout.ftl">
 <@body>
     <#--<meta charset="utf-8">-->
