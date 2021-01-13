@@ -19,7 +19,9 @@ springboot项目整合allure 报告
 
 把allure-report中的页面，如：index.html，改成allureReport.ftl  
 修改资源的连接地址，如下：
+
 <#include "/layout/layout.ftl">
+
 <@body>
     <#--<meta charset="utf-8">-->
     <#--<title>Allure Report</title>-->
@@ -52,6 +54,6 @@ public class allureReportController {
 在任意页面，添加超链接 （如：implementCase/implementCase.ftl页中），
  
 <button id="btn_add" type="button" >
-    // <a  href="/allure2/allureReport#suites" target="_blank">演示Allure报告</a>
+    "<a href="/allure2/allureReport#suites" target="_blank">演示Allure报告</a>"
            <a  href="/allure2/allureReport#suites" target="_blank">演示Allure报告</a>
 </button>
