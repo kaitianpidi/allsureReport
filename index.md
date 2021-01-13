@@ -2,7 +2,10 @@
 ![page页面](https://github.com/kaitianpidi/allsureReport/blob/gh-pages/allure_page.png?raw=true)
 ![资源目录](https://github.com/kaitianpidi/allsureReport/blob/gh-pages/allure_page.png?raw=true)
 图片，如不能显示，可直接看下面的文章。
+
 springboot项目整合allure 报告
+
+
 #一. springboot项目引入资源文件
 ##1.在static下，建立目录 allure2 
  从allure-report中拷贝  data，widgets  两个目录到 static/allure2
@@ -10,8 +13,9 @@ springboot项目整合allure 报告
  从allure-report中拷贝  plugins目录，app.js，favicon.ico，styles.css  四个内容 到 static/lib/allure2
  
 #二. 创建页面：  templates/allure2/allureReport.ftl 
-把allure-report中的index.html，改成allureReport.ftl  
-修改资源连接地址，如下：
+
+把allure-report中的页面，如：index.html，改成allureReport.ftl  
+修改资源的连接地址，如下：
 <#include "/layout/layout.ftl">
 <@body>
     <#--<meta charset="utf-8">-->
