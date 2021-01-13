@@ -54,6 +54,6 @@ public class allureReportController {
 在任意页面，添加超链接 （如：implementCase/implementCase.ftl页中），
  
 <button id="btn_add" type="button" >
-    "<a href="/allure2/allureReport#suites" target="_blank">演示Allure报告</a>"
+  //建立a 超链接标签， 连接地址： "/allure2/allureReport#suites"
            <a  href="/allure2/allureReport#suites" target="_blank">演示Allure报告</a>
 </button>
