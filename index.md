@@ -42,13 +42,19 @@ springboot项目整合allure 报告
 
 #三 . 建立controller， 
 @Controller
+
 @RequestMapping("allure2")
+
 public class allureReportController {
+
     @RequestMapping("allureReport")
+    
     public String abnormalStatisticsPage(){
+    
         return "allure2/allureReport";
     }
 }
+
 注意：  @RequestMapping("allure2") 中的 "allure2" 要和 static/allure2 的名称一致。否则 资源会找不到。
 
 #四.  页面 调用 报告
