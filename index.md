@@ -7,9 +7,12 @@ springboot项目整合allure 报告
 
 
 #一. springboot项目引入资源文件
+
 ##1.在static下，建立目录 allure2 
  从allure-report中拷贝  data，widgets  两个目录到 static/allure2
+ 
 ##2.在lib 下，建立allure2  （也可以把使用上面的allure2 ， 这里是分开 存放资源）
+
  从allure-report中拷贝  plugins目录，app.js，favicon.ico，styles.css  四个内容 到 static/lib/allure2
  
 #二. 创建页面：  templates/allure2/allureReport.ftl 
@@ -49,5 +52,6 @@ public class allureReportController {
 在任意页面，添加超链接 （如：implementCase/implementCase.ftl页中），
  
 <button id="btn_add" type="button" >
+    // <a  href="/allure2/allureReport#suites" target="_blank">演示Allure报告</a>
            <a  href="/allure2/allureReport#suites" target="_blank">演示Allure报告</a>
 </button>
