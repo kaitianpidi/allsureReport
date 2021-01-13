@@ -51,9 +51,10 @@ public class allureReportController {
 注意：  @RequestMapping("allure2") 中的 "allure2" 要和 static/allure2 的名称一致。否则 资源会找不到。
 
 #四.  页面 调用 报告
-在任意页面，添加超链接 （如：implementCase/implementCase.ftl页中），
- 
+在任意页面，添加超链接 （如：implementCase/implementCase.ftl页），
+ <pre>
 <button id="btn_add" type="button" >
   //建立a 超链接标签， 连接地址： "/allure2/allureReport#suites"
            <a  href="/allure2/allureReport#suites" target="_blank">演示Allure报告</a>
 </button>
+</pre>
