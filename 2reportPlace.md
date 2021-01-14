@@ -10,7 +10,7 @@ data，data/test-cases ，widgets 三个文件夹的数据。
 因此，写三个  访问地址（三个方法）。  
 如果还有其他数据目录，再添加相应的方法。（data/attachments 目录 为空，本例子中未写该方法）
 
-**注意：**  controller 中的访问路径，即为，allure报告的index.html文件的路径。该路径不能随便写，因为这里时模式项目内的访问路径，否则，index文件不能访问到相应的资源。
+**注意：**  controller 中的访问路径，即为，allure报告的index.html文件的路径。该路径不能随便写，因为这里是模式项目内的访问路径，否则，index文件不能访问到相应的资源。
 
 # 功能实现：
 ##参考代码（https://www.cnblogs.com/javajetty/p/9648551.html 最后一段 “返回指定地址的文件流”）
