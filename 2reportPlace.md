@@ -1,10 +1,11 @@
 # 项目中的 文件放到其他地方， 在项目访问方式不变的情况下，也可以正常访问，实现原理：
-1.前端js，查看项目中文件的访问地址。    
+1.前端js，查看项目中文件的访问地址。 (查看地址简单方式，把数据的文件，移走或移除，访问时会报错，会提示的需要的地址)   
 2. 后台，写一个服务， 提供相同的访问地址。  数据内容由该服务提供（即，读取文件，返回给浏览器）
 
-#功能实现：
+# 功能实现：
 ##参考代码（https://www.cnblogs.com/javajetty/p/9648551.html 最后一段 “返回指定地址的文件流”）
-##1.代码：
+
+## 1.代码：
 ```
 package com.compass;
 
@@ -144,7 +145,7 @@ public class allureReportController {
 
 ```
 
-##2.修改访问地址：
+## 2.修改访问地址：
 ```
   <button id="btn_add" type="button" >
             <a  href="/allure2/jobName1/allureReport#suites" target="_blank">演示Allure报告</a>
