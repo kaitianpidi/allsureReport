@@ -17,7 +17,7 @@ public class AllureReportTest2 {
         if (json != null) {
             Object status = json.get("status");
             if (status != null) {
-                if (!status.equals("passed")) {   //该json 置空
+                if (!status.equals("passed")) {    //非passed 的用例
                     return json;  //返回
                 }else {
                     return null;
